@@ -1,0 +1,38 @@
+body {
+  font-size: 14px;
+  font-family: 'Microsoft Yahei';
+}
+
+.mtop {
+  margin-top: 25px;
+}
+
+/* 導航二級菜單 */
+.Navigation_menu {
+  height: 40px;
+  border-bottom: 1px solid rgb(212, 210, 210);
+}
+
+
+.Navigation_menu ul li {
+  list-style-type: none;
+  margin: auto;
+  display: inline;
+}
+
+.Navigation_menu li a {
+  /* text-align: center; */
+  padding: 10px 10px;
+  text-decoration: none;
+  color: rgb(116, 112, 112);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+
+.menu_fs li a {
+  font-size: 12px;
+}
