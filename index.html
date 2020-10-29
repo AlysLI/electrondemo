@@ -11,9 +11,35 @@
 <script src="./scripts/js/index.js"></script>
 
 <body>
-    <div id="container">
-        <h1>點擊下載</h1>
-    </div>
+    <div class="container mtop">
+            <form class="input-group mb-3">
+                <span style="margin-top:10px ;">Please scan SN&PN:&nbsp;</span>
+                <input class="form-control" type="text" id="Downinp" placeholder="Please scan SN&PN">&nbsp;&nbsp;
+                <button class="btn btn-outline-secondary" type="submit" id="Downbtn">Down</button>
+            </form>
+            <!-- 用折叠面板顯示查詢 -->
+            <nav class="Navigation_menu mtop">
+                <ul class="nav justify-content-center">
+                    <li class="dropdown"><a>MFGI</a>
+                        <ul class="dropdown-menu menu_fs">
+                            <li><a href="##">CSS3</a></li>
+                            <li><a href="##">Sass</a></li>
+                            <li class="nav-divider"></li>
+                            <li><a href="##">jQuery</a></li>
+                            <li><a href="##">Responsive</a></li>
+                        </ul>
+                    </li>
+                    <li><a>MFGII</a></li>
+                    <li><a>MFGIII</a></li>
+                    <li><a>MFGV</a></li>
+                    <li><a>MFGVI</a></li>
+                    <li><a>MFGVII</a></li>
+                    <li><a>MFGVIII</a></li>
+                </ul>
+            </nav>
+            <!-- 程式下載狀態顯示 -->
+            <p id="states"></p>
+        </div>
 </body>
 
 </html>
