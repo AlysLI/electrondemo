@@ -10,35 +10,58 @@
 </head>
 
 <body>
-    <form class="container">
-        <h3>log in</h3>
-        <div class="form-group row">
-            <label for="username" class="col-sm-1 col-form-label col-form-label-sm">username:</label>
-            <div class="col-sm">
-                <input type="email" class="form-control form-control-sm" id="colFormLabelSm"
-                    placeholder="please enter username">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="password" class="col-sm-1 col-form-label col-form-label-sm">password:</label>
-            <div class="col-sm">
-                <input type="email" class="form-control form-control-sm" id="colFormLabelSm"
-                    placeholder="Please enter password">
-            </div>
-        </div>
-        <div>
-            <p id="caution" style="color:red; text-align:center">...</p>
-        </div>
-        <div class="row justify-content-around">
-            <div class="col-4">
-                <button type="button" class="btn btn-primary btn-sm" id="login">Submit</button>
-            </div>
-            <div class="col-4">
-                <button type="reset" class="btn btn-secondary btn-sm" id="cancel"
-                    onclick="window.close();">Cancel</button>
-            </div>
-        </div>
-    </form>
+    <form class="container" onsubmit="window.login()">
+    <h3 style="text-align: center;">LOGIN</h3>
+    <div class="form-group row">
+      <!-- <label for="username" class="col-sm-1 col-form-label col-form-label-sm">username:</label> -->
+      <div class="col-sm">
+        <input type="text" class="form-control form-control-sm" id="username" name="username" placeholder="username"
+          required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <!-- <label for="password" class="col-sm-1 col-form-label col-form-label-sm">password:</label> -->
+      <div class="col-sm">
+        <input type="password" class="form-control form-control-sm" id="password" name="password" placeholder="password"
+          required>
+      </div>
+    </div>
+    <div>
+      <p id="caution" style="color: crimson;text-align: center;font-size: 14px;"></p>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-4">
+        <button type="submit" class="btn btn-primary btn-sm" id="login" onsubmit="window.login()">Submit</button>
+      </div>
+      <div class="col-4">
+        <button type="reset" class="btn btn-secondary btn-sm" id="cancel" onclick="window.close();">Cancel</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    require('./src/render/login.js')
+  </script>
+  <!-- <script src="src/render/login.js"></script> -->
+  <!-- <script>
+    function checkForm() {
+      var name = document.getElementById('username').value;
+      var pwd = document.getElementById('password').value;
+      var caution = document.getElementById('caution');
+      if ((name == null || name == "") || (pwd == null || pwd == "")) {
+        caution.innerHTML = "The user name and password cannot be empty";
+        return false;
+      } else {
+        if (name == "op" && pwd == "op567765!") {
+          window.location.href = "index.html";
+          return true;
+        } else {
+          caution.innerHTML = "Incorrect user name or password";
+          return false;
+        }
+      }
+    }
+  </script> -->
 </body>
+
 
 </html>
