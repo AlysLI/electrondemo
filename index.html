@@ -11,67 +11,101 @@
 <script src="./scripts/js/index.js"></script>
 
 <body>
-    <div class="container mtop">
-            <form class="input-group mb-3">
-                <span style="margin-top:10px ;">Please scan SN&PN:&nbsp;</span>
-                <input class="form-control" type="text" id="Downinp" placeholder="Please scan SN&PN">&nbsp;&nbsp;
-                <button class="btn btn-outline-secondary" type="submit" id="Downbtn">Down</button>
-            </form>
-            <!-- 用折叠面板顯示查詢 -->
-            <nav class="Navigation_menu mtop">
-                <ul class="nav justify-content-center">
-                    <li class="dropdown"><a>MFGI</a>
-                        <ul class="dropdown-menu menu_fs">
-                            <li><a href="##">CSS3</a></li>
-                            <li><a href="##">Sass</a></li>
-                            <li class="nav-divider"></li>
-                            <li><a href="##">jQuery</a></li>
-                            <li><a href="##">Responsive</a></li>
-                        </ul>
-                    </li>
-                    <li><a>MFGII</a></li>
-                    <li><a>MFGIII</a></li>
-                    <li><a>MFGV</a></li>
-                    <li><a>MFGVI</a></li>
-                    <li><a>MFGVII</a></li>
-                    <li><a>MFGVIII</a></li>
-                </ul>
-            </nav>
-            <!-- 程式下載狀態顯示 -->
-            <p id="states"></p>
-        <!-- 程式目录表格 -->
-        <table class="table table-hover">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Username</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-          
-        </div>
+   <div class="container mtop" style="visibility:hidden" id="content">
+    <form class="input-group mb-3">
+      <span style="margin-top: 5px;">Please scan SN&PN:&nbsp;</span>
+      <input class="form-control form-control-sm" type="text" id="snInp" placeholder="SN">
+      <input class="form-control form-control-sm" type="text" id="pnInp" placeholder="PN">&nbsp;&nbsp;
+      <button class="btn btn-outline-secondary btn-sm" type="submit" id="downbtn">Down</button>
+    </form>
+    <!-- 用折叠面板顯示查詢 -->
+    <nav class="Navigation_menu mtop">
+      <ul class="nav justify-content-center">
+        <li class="dropdown"><a>MFGI</a>
+          <ul class="dropdown-menu menu_fs">
+            <li><a href="##">CSS3</a></li>
+            <li><a href="##">Sass</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="##">jQuery</a></li>
+            <li><a href="##">Responsive</a></li>
+          </ul>
+        </li>
+        <li><a>MFGII</a></li>
+        <li><a>MFGIII</a></li>
+        <li><a>MFGV</a></li>
+        <li><a>MFGVI</a></li>
+        <li><a>MFGVII</a></li>
+        <li><a>MFGVIII</a></li>
+      </ul>
+    </nav>
+    <!-- 程式下載狀態顯示 -->
+    <div style="margin-top:20px;">
+      <p id="states" style="color:rgb(32, 31, 71);text-align: center;">Status:MFGII/mcebu3 on 192.168.200.213 is
+        selected</p>
+    </div>
+    <!-- 程式目錄列表 -->
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">NO</th>
+          <th scope="col">BU</th>
+          <th scope="col">Program Name</th>
+          <th scope="col">Down Load</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>MFGII</td>
+          <td>R10197801-A0-V1.zip</td>
+          <td><button class="btn btn-secondary btn-sm">Down</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>MFGII</td>
+          <td>R10197801-A0-V1.zip</td>
+          <td>Down</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>MFGII</td>
+          <td>R10197801-A0-V1.zip</td>
+          <td>Down</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>MFGII</td>
+          <td>R10197801-A0-V1.zip</td>
+          <td>Down</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>MFGII</td>
+          <td>R10197801-A0-V1.zip</td>
+          <td>Down</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>MFGII</td>
+          <td>R10197801-A0-V1.zip</td>
+          <td>Down</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>MFGII</td>
+          <td>R10197801-A0-V1.zip</td>
+          <td>Down</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>MFGII</td>
+          <td>R10197801-A0-V1.zip</td>
+          <td>Down</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
 </body>
 
 </html>
